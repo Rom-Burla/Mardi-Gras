@@ -1,3 +1,13 @@
+/* fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap');
+
+:root{
+--font-primary-heading: "Henny Penny", cursive;
+--font-secondary-heading: "Pattaya", sans-serif;
+--font-text: 'Roboto', sans-serif;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +43,9 @@ article{
 footer{
     grid-area: footer;
     background-color: rgb(202, 138, 18);
+}
+p{
+    font-family: var(--font-text);
 }
 .nav-header {
   display: flex;
@@ -102,3 +115,9 @@ footer{
     padding: 0;
     background: transparent;
   }}
+
+
+
+  .copyright{
+    text-align: center;
+  }
