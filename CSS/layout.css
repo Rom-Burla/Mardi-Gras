@@ -24,7 +24,7 @@ header{
 }
 nav{
      grid-area: nav;
-  background-color: rgb(80, 107, 110);
+     background-color: rgb(80, 107, 110);
 }
 section{
     grid-area: section;
@@ -37,4 +37,32 @@ article{
 footer{
     grid-area: footer;
     background-color: rgb(202, 138, 18);
+}
+
+.nav-header{
+
+    height: auto;
+}
+
+.links{
+
+    height: 0;
+    overflow: auto;
+    transition: var(--transition);
+}
+
+.show-links{
+    height: 10rem;
+}
+
+@media screen and(min-width:800px) {
+    .nav-center{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1  rem;
+
+    }
 }
