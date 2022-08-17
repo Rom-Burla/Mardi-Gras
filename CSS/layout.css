@@ -10,20 +10,16 @@
     margin: auto;
     background-color: aquamarine;
     grid-template-areas: 
-    "header header header"
     "nav nav nav"
-    "section section aside"
-    "article article aside"
+    "section section section"
+    "article article article"
     "footer footer footer";
-     grid-template-rows: 2fr 2fr 10fr 7fr 1fr;
+     grid-template-rows: 4fr 10fr 7fr 1fr;
 }
-header{
-    grid-area: header;
-  text-align: center;
-  background-color: rgb(50, 64, 196);
-}
+
 nav{
      grid-area: nav;
+     width: 100vw;
      background-color: rgb(80, 107, 110);
 }
 section{
@@ -38,31 +34,70 @@ footer{
     grid-area: footer;
     background-color: rgb(202, 138, 18);
 }
-
-.nav-header{
-
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+.mardi-gras-logo {
+    height: 40px;
+}
+.links a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+.links a:hover {
+  padding-left: 1.5rem;
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-links {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle:hover {
+  transform: rotate(90deg);
+}
+  .links {
     height: auto;
-}
-
-.links{
-
-    height: 0;
-    overflow: auto;
-    transition: var(--transition);
-}
-
-.show-links{
-    height: 10rem;
-}
-
-@media screen and(min-width:800px) {
-    .nav-center{
-        max-width: 1170px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1  rem;
-
-    }
-}
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }}
