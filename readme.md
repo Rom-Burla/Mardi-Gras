@@ -1,3 +1,9 @@
+## Framework for an html page when you open a new page copy from line 3 to end of the file to the new page
+
+## after you copy change the links from 'Specific page JS' file to a new file that made especially for the page
+
+## change the 'Specific page CSS' to a new file made especially for the page
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app/framework.js" type="module"></script>
-    <script src="./app/index.js"></script>
+    <script src="./app/'Specific page JS file'"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="./CSS/framework.css">
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/'Specific page CSS'">
     <title>Layout</title>
 
 <body>
@@ -80,6 +86,7 @@
         </footer>
     </div>
     <!-- end of global framework -->
+
 </body>
 
 </html>

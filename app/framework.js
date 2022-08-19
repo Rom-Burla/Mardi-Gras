@@ -1,4 +1,4 @@
-import { sponsers } from "./sponsors.js";
+import { sponsers } from "./sponsers.js";
 let navToggle = document.querySelector(".nav-toggle");
 let links = document.querySelector(".links");
 let footer = document.querySelector("footer");

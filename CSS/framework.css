@@ -20,7 +20,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.layout{
+.container{
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -34,6 +34,7 @@
      grid-template-rows: 4fr 10fr 7fr 1fr;
 }
 
+/* tags global settings */
 nav{
      grid-area: nav;
      width: 100vw;
@@ -77,10 +78,11 @@ a:hover{
 img{
   width: 225px;
 }
+/* end of tags global setting */
 .nav-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
 }
 .nav-toggle {
@@ -138,9 +140,11 @@ img{
     height: auto;
     display: flex;
   }
-  .links a {
+   .links a {
     padding: 0;
     margin: 0 0.5rem;
+    color: var(--color-white-fr);
+    text-decoration: none;
   }
   .links a:hover {
     padding: 0;
@@ -158,6 +162,22 @@ img{
   .copyright{
     text-align: center;
   }
+  /* social icons */
+    .social-icons{
+    display: flex;
+    justify-content: space-between;  
+  } 
+  
+  li{ 
+    list-style-type: none;
+    margin: 5px;
+    
+  }
+
+  .social-icons a{
+    color: var(--color-white-fr);
+  }
+  /* sponser modals */
   .modal-container{
     display: flex;
     flex-wrap: wrap;
@@ -214,18 +234,6 @@ img{
   border: 1px solid #888;
   border-radius: 50px;
   width: 80%;
-}
-.modal-close {
-  color: rgb(63, 17, 17);
-  float: left;
-  font-size: 28px;
-  font-weight: bold;
-}
-.modal-close:hover,
-.modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 

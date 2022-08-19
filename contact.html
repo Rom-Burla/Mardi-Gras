@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app/framework.js" type="module"></script>
-    <script src="./app/index.js"></script>
+    <script src="./app/contact.js" type="module"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="./CSS/framework.css">
-    <link rel="stylesheet" href="./CSS/index.css">
-    <title>Layout</title>
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <title>Document</title>
+</head>
 
 <body>
-    <!-- global framework -->
     <div class="container">
         <header>
             <nav>
@@ -73,13 +73,42 @@
         </header>
 
 
-        <section></section>
+        <section>
+            <form action="" method="get" id="my-Form">
+
+                <div>
+                    <lable for="name">please add name:
+                        <input type="text" name="fName" id="fName" placeholder="your name">
+                    </lable>
+                </div>
+                <div>
+                    <lable for="lName">please add last name:
+                        <input type="text" name="lName" id="lName" placeholder="your last name">
+                    </lable>
+                </div>
+                <div>
+                    <lable for="email">please add Email:
+                        <input type="text" name="eMail" id="eMail" placeholder="your Email">
+                    </lable>
+                </div>
+                <div>
+                    <lable for="pass">please add password:
+                        <input type="password" name="password" id="password" placeholder="your password">
+                    </lable>
+
+
+                </div>
+                <div id="err"></div>
+                <button id="btn">Click me</button>
+
+
+            </form>
+        </section>
         <article>Hi i am Article</article>
         <footer>
-
         </footer>
     </div>
-    <!-- end of global framework -->
+
 </body>
 
 </html>
