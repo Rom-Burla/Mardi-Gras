@@ -38,7 +38,7 @@
 nav{
      grid-area: nav;
      width: 100vw;
-     background-color: rgb(80, 107, 110);
+     background-color: var(--color-purple-bg);
 }
 section{
     grid-area: section;
@@ -81,9 +81,11 @@ img{
 /* end of tags global setting */
 .nav-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  gap: 20px;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -102,12 +104,15 @@ img{
 .links a {
   font-size: 1rem;
   text-transform: capitalize;
+  color: var(--color-white-fr);
   display: block;
   padding: 0.5rem 1rem;
   transition: all 0.3s linear;
+  text-align: center;
 }
-.links a:hover {
-  padding-left: 1.5rem;
+.links a:active {
+  background-color: var(--color-yellow-main-bg);
+  color: var(--color-purple-bg);
 }
 .links {
   height: 0;
@@ -118,6 +123,10 @@ img{
 .show-links {
   height: 10rem;
 }
+  /* social icons */
+    .social-icons{
+    display: none;
+    }
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -145,23 +154,21 @@ img{
     margin: 0 0.5rem;
     color: var(--color-white-fr);
     text-decoration: none;
+    transition: all 0.3s;
   }
   .links a:hover {
     padding: 0;
     background: transparent;
+    text-decoration: underline;
+  }
+  .links a:active {
+    transform: scale(0.9);
+    color: #f2f2f2a4;
   }
   .mardi-gras-logo {
     width: 100%;
     height: 100px;
 }
-}
-
-
-
-
-  .copyright{
-    text-align: center;
-  }
   /* social icons */
     .social-icons{
     display: flex;
@@ -171,12 +178,31 @@ img{
   li{ 
     list-style-type: none;
     margin: 5px;
-    
+    transition: all 0.4s ease-in-out;
+  }
+  li:hover{ 
+    transform: scale(1.3);
+  }
+  li:active{ 
+    transform: scale(0.9);
+   
   }
 
   .social-icons a{
     color: var(--color-white-fr);
   }
+  .social-icons a:active{
+     color: #f2f2f2a4;
+  }
+}
+
+
+
+
+  .copyright{
+    text-align: center;
+  }
+
   /* sponser modals */
   .modal-container{
     display: flex;
@@ -219,7 +245,6 @@ img{
   width: 100%;
   height: 100%; 
   overflow: auto;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
 .modal-content-active{
@@ -228,7 +253,7 @@ img{
   align-items: center;
   gap: 20px;
   background-color: var(--color-purple-bg);
-  color: #F2F2F2;
+  color: var(--color-white-fr);
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;

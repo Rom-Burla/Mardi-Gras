@@ -4,22 +4,26 @@ let links = document.querySelector(".links");
 let footer = document.querySelector("footer");
 let modalArr = [];
 let modalContainer = document.createElement("div");
-let secondaryHeading = document.createElement("h3");
+let footerHeading = document.createElement("h3");
 let copyright = document.createElement("p");
 
+// responsive nav bar
 navToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
-footer.appendChild(secondaryHeading);
-secondaryHeading.innerHTML = `Our Festival's Sponsers`;
+// end of responsive nav bar
+
+// footer
+footer.appendChild(footerHeading);
+footerHeading.innerHTML = `Our Festival's Sponsers`;
 footer.appendChild(modalContainer);
 modalContainer.className = "modal-container";
+
 for (let i = 0; i < sponsers.length; i++) {
   let modal = document.createElement("button");
   modal.id = i;
   modalArr.push(modal);
   modalContainer.appendChild(modalArr[i]);
-  console.log(modalArr);
   modalArr[i].style.backgroundImage = `url("${sponsers[i].logo}")`;
   modalArr[i].className = "modal";
   let modalContent = document.createElement("div");
@@ -46,3 +50,4 @@ footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Nir & Rom. All rights reserved.
 </p>`;
+// end of footer

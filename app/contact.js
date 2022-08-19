@@ -6,57 +6,58 @@
 
 myFunc("nir","mor","dor","eli",33);
  */
-let arrows=[];
-let myForm= document.getElementById("my-Form");
-let myErr= document.getElementById("err");
 
+let errors = [];
+let myForm = document.getElementById("my-Form");
+let myErr = document.getElementById("err");
 
-myForm.addEventListener("submit", (evn)=>{
+let errContainer = document.getElementById("err-container");
 
-    myErr.innerHTML="";
-    
-    let {fName,lName,eMail,password}=myForm.elements;
-    let tempName = fName.value.trim();
-    if(tempName.length<2)
-    {
-        let msg ="worng name!";
-        arrows.push(msg);
-        evn.preventDefault();
+myForm.addEventListener("submit", (evn) => {
+  let { fName, lName, eMail, password } = myForm.elements;
+  let tempName = fName.value.trim();
+  if (tempName.length == 0) {
+    let msg = "Name is empty";
+    errors.push(msg);
+    evn.preventDefault();
+  } else if (tempName.length < 2 && tempName.length > 0) {
+    let msg = "wrong name!";
+    errors.push(msg);
+    evn.preventDefault();
+  }
+  tempName = lName.value.trim();
+  if (tempName.length < 2) {
+    let msg = "wrong last name!";
+    errors.push(msg);
+    evn.preventDefault();
+  }
 
-    }
-      tempName = lName.value.trim();
-     if(tempName.length<2)
-    {
-        let msg ="worng last name!";
-        arrows.push(msg);
-        evn.preventDefault();
-    }
+  if (!eMail.value.includes("@")) {
+    let msg = "wrong email!";
+    errors.push(msg);
+    evn.preventDefault();
+  }
 
-     if(!eMail.value.includes('@'))
-    {
-        let msg ="worng email!";
-        arrows.push(msg);
-        evn.preventDefault();
-    }
+  if (password.value < 2) {
+    let msg = "wrong password!";
+    errors.push(msg);
+    evn.preventDefault();
+  }
 
-     if(password.value<2)
-    {
-        let msg ="worng password!";
-        arrows.push(msg);
-        evn.preventDefault();
-    }
-
-    if(arrows.length>0){
-        arrows.forEach((err)=>{
-        myErr.innerHTML+= `
-        <div>
-        you got error ${err}
-        </div>`
-       
-        })
-        
-    }
-
-
-})
-
+  if (errors.length > 0) {
+    errors.forEach((err) => {
+      myErr.innerHTML += `
+          <div>
+          you got error ${err}
+          </div>`;
+    });
+  }
+  if (errors.length > 0) {
+    errors.forEach((err) => {
+      myErr.innerHTML += `
+          <div>
+          you got error ${err}
+          </div>`;
+    });
+  }
+});
