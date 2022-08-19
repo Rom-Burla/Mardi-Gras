@@ -5,13 +5,11 @@
 }
 
 myFunc("nir","mor","dor","eli",33);
- */
+*/
 
 let errors = [];
 let myForm = document.getElementById("my-Form");
 let myErr = document.getElementById("err");
-
-let errContainer = document.getElementById("err-container");
 
 myForm.addEventListener("submit", (evn) => {
   let { fName, lName, eMail, password } = myForm.elements;
@@ -45,19 +43,13 @@ myForm.addEventListener("submit", (evn) => {
   }
 
   if (errors.length > 0) {
+    myErr.innerHTML = "";
     errors.forEach((err) => {
       myErr.innerHTML += `
           <div>
           you got error ${err}
           </div>`;
     });
-  }
-  if (errors.length > 0) {
-    errors.forEach((err) => {
-      myErr.innerHTML += `
-          <div>
-          you got error ${err}
-          </div>`;
-    });
+    errors.splice(0, errors.length);
   }
 });
