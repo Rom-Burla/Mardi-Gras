@@ -1,3 +1,4 @@
+"use strict";
 import { sponsers } from "./sponsers.js";
 let navToggle = document.querySelector(".nav-toggle");
 let links = document.querySelector(".links");

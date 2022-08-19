@@ -1,3 +1,4 @@
+"use strict";
 const sponsers = [
   {
     name: "Walk-On's Bistreaux and Bar",

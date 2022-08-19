@@ -1,11 +1,4 @@
-/* let myFunc=(first,last, ...rest)=>{
-    console.log(first);
-    console.log(last);
-    console.log(rest);
-}
-
-myFunc("nir","mor","dor","eli",33);
-*/
+"use strict";
 
 let errors = [];
 let myForm = document.getElementById("my-Form");
