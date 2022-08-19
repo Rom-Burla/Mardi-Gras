@@ -11,6 +11,7 @@ let errors = [];
 let myForm = document.getElementById("my-Form");
 let myErr = document.getElementById("err");
 
+// need to return to make the checks more serius
 myForm.addEventListener("submit", (evn) => {
   let { fName, lName, eMail, password } = myForm.elements;
   let tempName = fName.value.trim();
