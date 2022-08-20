@@ -13,3 +13,48 @@
     display: flex;
     flex-direction: column;
 }
+
+.section{
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  
+}
+
+form{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-white-fr);
+   
+    width: 30.5%;
+    margin: auto;
+
+   
+}
+
+label{
+    flex: 34.8%;
+}
+
+input{
+    flex: 50%;
+}
+
+#btn{
+    margin: 10px;
+    margin-left: 45%;
+    padding: 5px;
+    font-family: var(--font-secondary-heading);
+    color:var(--color-purple-bg);
+    font-size: 25px;
+    border-radius: 10px;
+    background-color:#e1d176cf;
+}
+
+
+

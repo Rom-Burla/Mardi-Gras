@@ -82,11 +82,18 @@ img{
   width: 225px;
 }
 /* end of tags global setting */
-.nav-header {
+.nav-center{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+.nav-header {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   padding: 1rem;
   gap: 20px;
 }
@@ -101,8 +108,9 @@ img{
   transform: rotate(90deg);
 }
 .mardi-gras-logo {
-    width: 20%;
-    height: 120px;
+  margin-top: 20px;
+  order: 1;
+  flex: 50%;
 }
 .links a {
   font-size: 1rem;
@@ -118,6 +126,7 @@ img{
   color: var(--color-purple-bg);
 }
 .links {
+  order: 3;
   height: 0;
   overflow: hidden;
   transition: all 0.3s linear;
@@ -132,15 +141,16 @@ img{
     }
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid;
   }
   .nav-header {
     padding: 0;
+ 
   }
   .nav-toggle {
     display: none;
@@ -149,8 +159,11 @@ img{
   transform: rotate(90deg);
 }
   .links {
+       order: 1;
+    flex: 10%;
     height: auto;
     display: flex;
+    justify-content: center;
   }
    .links a {
     padding: 0;
@@ -169,14 +182,22 @@ img{
     transform: scale(0.9);
     color: #f2f2f2a4;
   }
+  a{
+    order: 2;
+  }
   .mardi-gras-logo {
+    order: 2;
+    margin: 0;
     width: 100%;
-    height: 100px;
+    height: 90px;
+    flex: 45%;
 }
   /* social icons */
     .social-icons{
+      order: 3;
+      flex: 5%;
     display: flex;
-    justify-content: space-between;  
+    justify-content: center;  
   } 
   
   li{ 

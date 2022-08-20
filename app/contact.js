@@ -1,48 +1,54 @@
 "use strict";
 
 let errors = [];
-let myForm = document.getElementById("my-Form");
+let myForm = document.getElementById("my-form");
 let myErr = document.getElementById("err");
 
-// need to return to make the checks more serius
-myForm.addEventListener("submit", (evn) => {
-  let { fName, lName, eMail, password } = myForm.elements;
-  let tempName = fName.value.trim();
+myForm.addEventListener("submit", (evt) => {
+  let { fname, lname, email, password } = myForm.elements;
+  let tempName = fname.value.trim();
   if (tempName.length == 0) {
-    let msg = "Name is empty";
+    let msg = "You need to write you first name";
     errors.push(msg);
-    evn.preventDefault();
+    evt.preventDefault();
   } else if (tempName.length < 2 && tempName.length > 0) {
-    let msg = "wrong name!";
+    let msg = "First name isn't valid";
     errors.push(msg);
-    evn.preventDefault();
+    evt.preventDefault();
   }
-  tempName = lName.value.trim();
-  if (tempName.length < 2) {
-    let msg = "wrong last name!";
+  tempName = lname.value.trim();
+  if (tempName.length == 0) {
+    let msg = "You need to write you last name";
     errors.push(msg);
-    evn.preventDefault();
-  }
-
-  if (!eMail.value.includes("@")) {
-    let msg = "wrong email!";
+    evt.preventDefault();
+  } else if (tempName.length < 2) {
+    let msg = "Last name isn't valid";
     errors.push(msg);
-    evn.preventDefault();
+    evt.preventDefault();
   }
-
-  if (password.value < 2) {
-    let msg = "wrong password!";
+  if (email.value.length == 0) {
+    let msg = "You need to write your Email";
     errors.push(msg);
-    evn.preventDefault();
+    evt.preventDefault();
+  } else if (!email.value.includes("@")) {
+    let msg = "Email isn't valid";
+    errors.push(msg);
+    evt.preventDefault();
   }
-
+  if (password.value.length == 0) {
+    let msg = "You need to create a password";
+    errors.push(msg);
+    evt.preventDefault();
+  } else if (password.value.length < 8) {
+    let msg = "Password needs to be at least 8 characters";
+    errors.push(msg);
+    evt.preventDefault();
+  }
   if (errors.length > 0) {
     myErr.innerHTML = "";
     errors.forEach((err) => {
       myErr.innerHTML += `
-          <div>
-          you got error ${err}
-          </div>`;
+      <div>${err}</div>`;
     });
     errors.splice(0, errors.length);
   }
