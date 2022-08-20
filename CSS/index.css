@@ -1,0 +1,100 @@
+:root{
+--font-primary-heading: "Henny Penny", cursive;
+--font-secondary-heading: "Pattaya", sans-serif;
+--font-text: 'Roboto', sans-serif;
+/* color setup */
+--color-purple-bg: #9453A6;
+--color-green-bg: #8CBF3F;
+--color-yellow-main-bg: #F2CC0F;
+--color-white-fr: #F2F2F2;
+--color-black-fr: #0D0D0D;
+}
+.slide-container {
+  position: relative;
+  margin: auto;
+}
+.slide {
+  display: none;
+  border-top: 1px solid var(--color-black-fr);
+}
+.slide img{
+    width: 100vw;
+    height: 80vh;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 1.28%;
+  border-radius: 3px 0 0 3px;
+}
+.next:hover{
+    color: var(--color-purple-bg);
+}
+.prev:hover{
+    color: var(--color-green-bg);
+}
+.prev:hover, .next:hover {
+  background-color: #0d0d0dcc;
+}
+.slide-description {
+  color: var(--color-green-bg);
+  font-family: var(--font-primary-heading);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slide:nth-child(2) .slide-description{
+    color: var(--color-black-fr);
+    font-size: 13px;
+    background-color: #8cbf3f7e;
+}
+.slide:nth-child(3) .slide-description{
+    color: var(--color-yellow-main-bg);
+    font-size: 13px;
+    background-color: #0d0d0d9c
+}
+.slide:nth-child(4) .slide-description{
+    color: var(--color-black-fr);
+    font-size: 13px;
+}
+.slide:nth-child(5) .slide-description{
+    color: var(--color-black-fr);
+    font-size: 13px;
+    background-color: #f2cc0f81;
+}
+.slide-count {
+  color: var(--color-purple-bg);
+  background-color: var(--color-green-bg);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: var(--font-secondary-heading);
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid black;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

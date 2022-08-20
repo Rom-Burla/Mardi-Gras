@@ -17,6 +17,7 @@ navToggle.addEventListener("click", () => {
 // footer
 footer.appendChild(footerHeading);
 footerHeading.innerHTML = `Our Festival's Sponsers`;
+footerHeading.style.color = "#9453A6";
 footer.appendChild(modalContainer);
 modalContainer.className = "modal-container";
 

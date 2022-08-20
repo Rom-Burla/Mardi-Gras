@@ -1,3 +1,14 @@
+:root{
+--font-primary-heading: "Henny Penny", cursive;
+--font-secondary-heading: "Pattaya", sans-serif;
+--font-text: 'Roboto', sans-serif;
+/* color setup */
+--color-purple-bg: #9453A6;
+--color-green-bg: #8CBF3F;
+--color-yellow-main-bg: #F2CC0F;
+--color-white-fr: #F2F2F2;
+--color-black-fr: #0D0D0D;
+}
 #err{
     display: flex;
     flex-direction: column;
