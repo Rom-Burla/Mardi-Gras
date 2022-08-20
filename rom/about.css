@@ -1,0 +1,32 @@
+:root{
+--font-primary-heading: "Henny Penny", cursive;
+--font-secondary-heading: "Pattaya", sans-serif;
+--font-text: 'Roboto', sans-serif;
+/* color setup */
+--color-purple-bg: #9453A6;
+--color-green-bg: #8CBF3F;
+--color-yellow-main-bg: #F2CC0F;
+--color-white-fr: #F2F2F2;
+--color-black-fr: #0D0D0D;
+}
+
+
+.about-header{
+    color:var(--color-black-fr);
+    margin-top: 20px;
+    font-weight: 700;
+  
+    
+}
+
+.about-secheader{
+   background-color: #9453A6;
+   color: #F2CC0F;
+margin-top: 20px;
+}
+
+.about-trdheader{
+     background-color:var(--color-yellow-main-bg);
+   color: var(--color-purple-bg);
+margin-top: 20px;
+}
