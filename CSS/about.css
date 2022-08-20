@@ -12,21 +12,37 @@
 
 
 .about-header{
-    color:var(--color-black-fr);
-    margin-top: 20px;
+    background-color:var(--color-green-bg);
+    color: var(--color-purple-bg);
+     padding: 15px;
     font-weight: 700;
-  
-    
 }
 
 .about-secheader{
    background-color: #9453A6;
    color: #F2CC0F;
-margin-top: 20px;
+   
+   padding: 15px;
+   font-weight: 700;
 }
 
 .about-trdheader{
-     background-color:var(--color-yellow-main-bg);
-   color: var(--color-purple-bg);
-margin-top: 20px;
+    background-color:rgb(0, 0, 0);
+    color: var(--color-green-bg);
+    
+    padding: 15px;
+    font-weight: 700;
+}
+.about-fortheader{
+    background-color: #c5c50c;
+    color: var(--color-purple-bg);
+    padding: 15px;
+    font-weight: 700;
+}
+
+.about-first-header{
+background-color: #c5c50c;
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
 }
