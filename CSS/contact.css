@@ -35,8 +35,8 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 300px;
+    gap: 5px;
+    width: 350px;
 }
 #fname{
     margin-left: 3px;
