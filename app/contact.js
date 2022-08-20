@@ -8,7 +8,7 @@ myForm.addEventListener("submit", (evt) => {
   let { fname, lname, email, password } = myForm.elements;
   let tempName = fname.value.trim();
   if (tempName.length == 0) {
-    let msg = "You need to write you first name";
+    let msg = "You need to write your first name";
     errors.push(msg);
     evt.preventDefault();
   } else if (tempName.length < 2 && tempName.length > 0) {
@@ -18,7 +18,7 @@ myForm.addEventListener("submit", (evt) => {
   }
   tempName = lname.value.trim();
   if (tempName.length == 0) {
-    let msg = "You need to write you last name";
+    let msg = "You need to write your last name";
     errors.push(msg);
     evt.preventDefault();
   } else if (tempName.length < 2) {
