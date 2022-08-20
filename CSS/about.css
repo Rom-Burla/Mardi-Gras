@@ -25,12 +25,12 @@
    background-color: #9453A6;
    color: #F2CC0F;
    margin-top: 20px;
-   padding: 15px;
+   padding: 10px;
 }
 
 .about-trdheader{
     background-color:var(--color-yellow-main-bg);
     color: var(--color-purple-bg);
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
 }
