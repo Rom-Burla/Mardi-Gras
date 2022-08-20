@@ -41,6 +41,7 @@ form{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 300px;
 }
 #fname{
     margin-left: 3px;
@@ -52,7 +53,7 @@ form{
     margin-right: 5px;
 }
 #password{
-    margin-right: 8px;
+    margin-right: 9px;
 }
 
 #btn{
