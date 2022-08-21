@@ -39,7 +39,7 @@ myForm.addEventListener("submit", (evt) => {
     errors.push(msg);
     evt.preventDefault();
   } else if (email.value.length < 11) {
-    let msg = "Emails are at least 8 characters long";
+    let msg = "Emails are at least 10 characters long";
     errors.push(msg);
     evt.preventDefault();
   }
