@@ -39,7 +39,10 @@ for (let i = 0; i < sponsers.length; i++) {
   <h1>${sponsers[i].name}</h1>
   <img src = "${sponsers[i].image}" alt = "${sponsers[i].name}">
   <p>${sponsers[i].description}</p>
-  <h3><a href="${sponsers[i].website}">${sponsers[i].website}</h3>`;
+  <h3>Contact Info</h3>
+  <p>Address: ${sponsers[i].address}</p>
+  <p>Phone: ${sponsers[i].phone}</p>
+  <h3><a href="${sponsers[i].website}">Click to get to ${sponsers[i].name} website</a></h3>`;
   modalArr[i].addEventListener("click", function () {
     modalContent.style.display = "block";
   });
