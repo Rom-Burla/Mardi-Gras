@@ -77,8 +77,8 @@ form{
     margin-right: 1%;
     border-left: 2px solid;
     border-top: 2px solid;
-    border-right: 2px solid #575757;
-    border-bottom: 2px solid #575757;
+    border-right: 2px solid #777676;
+    border-bottom: 2px solid #777676;
 }
 
 #fname:focus{
