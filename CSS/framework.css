@@ -40,6 +40,9 @@ body{
 }
 
 /* tags global settings */
+header{
+  border-bottom: 1px solid;
+}
 nav{
      grid-area: nav;
      width: 100vw;
@@ -48,15 +51,18 @@ nav{
 section{
     grid-area: section;
     background-color: var(--color-green-bg);
+    width: 100vw;
 }
 article{
     grid-area: article;
     background-color: var(--color-yellow-main-bg);
+    width: 100vw;
 }
 footer{
     grid-area: footer;
     background-color: var(--color-green-bg);
     padding: 20px;
+    width: 100vw;
 }
 h1{
   font-family: var(--font-primary-heading);
@@ -90,6 +96,7 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 .nav-header {
   order: 2;
@@ -99,6 +106,7 @@ img{
   justify-content: flex-start;
   padding: 1rem;
   gap: 20px;
+  
 }
 .nav-toggle {
   font-size: 1.5rem;
