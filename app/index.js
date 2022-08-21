@@ -2,6 +2,7 @@
 import { sliderPics } from "./sliderpics.js";
 
 let section = document.getElementsByTagName("section")[0];
+
 let slideContainer = document.createElement("div");
 slideContainer.className = "slide-container";
 section.appendChild(slideContainer);
