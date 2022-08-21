@@ -21,6 +21,7 @@ footerHeading.style.color = "#9453A6";
 footer.appendChild(modalContainer);
 modalContainer.className = "modal-container";
 
+// sponser modals
 for (let i = 0; i < sponsers.length; i++) {
   let modal = document.createElement("button");
   modal.id = i;
@@ -48,6 +49,8 @@ for (let i = 0; i < sponsers.length; i++) {
     }
   });
 }
+//end of sponser modals
+
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Nir & Rom. All rights reserved.
