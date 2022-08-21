@@ -11,7 +11,125 @@
 --color-black-fr: #0D0D0D;
 }
 
+/* contact form mobile style */
+
+form{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:var(--color-white-fr);
+    width: 30.5%;
+    margin:20px auto; 
+    row-gap: 5px;
+}
+
+#btn{
+    margin-top: 5px;
+    margin-right: 10%;    
+    padding: 5px;
+    font-family: var(--font-secondary-heading);
+    color:var(--color-purple-bg);
+    font-size: 25px;
+    border-radius: 10px;
+    background-color:#e1d176cf;
+}
+#btn:hover{
+    background-color: #f56600fc;
+}
+
+.mapouter{
+    
+    display: none;
+}
+
+.cityhall-address{
+    color: #739e33;
+    text-align: center;
+    font-weight: 700;
+}
+.cityhall-phone{
+    color: #739e33;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;}
+
+.mapouter-mobile{
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    padding: 5%;
+}
+
+.cityhall-heading{
+    color: var(--color-purple-bg);
+    margin-bottom: 20px;
+    
+}
+
+#fname{
+    background-color:#e1d176cf;
+    margin-top: 5px;
+}
+#lname{
+    background-color:#e1d176cf;
+    margin-top: 5px;
+}
+#email{
+    background-color:#e1d176cf;
+    margin-top: 5px;
+}
+#password{
+    background-color:#e1d176cf;
+    margin-top: 5px;
+}
+
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#freetxt{
+    background-color:#e1d176cf;
+    margin-right: 2%;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-right: 2px solid #777676;
+    border-bottom: 2px solid #777676;
+    margin-top: 5px;
+}
+
+#fname:focus{
+    background-color: #9453A6;
+    
+}
+#lname:focus{
+    background-color: #9453A6;
+}
+#email:focus{
+    background-color: #9453A6;
+}
+#password:focus{
+    background-color: #9453A6;
+}
+#freetxt:focus{
+    background-color: #9453A6;
+}
+
+
+
+
+
 /* contact form desktop style */
+@media screen and (min-width: 800px){
 .section{
 
     display: flex;
@@ -146,5 +264,11 @@ article{
     font-weight: 700;
 }
 .mapouter{
+    display: block;
     margin: auto;
+
+}
+.mapouter-mobile{
+    display: none;
+}
 }
