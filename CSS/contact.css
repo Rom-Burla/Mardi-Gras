@@ -65,6 +65,49 @@ form{
     border-radius: 10px;
     background-color:#e1d176cf;
 }
+#btn:hover{
+    background-color: #f56600fc;
+}
 
+#fname{
+    background-color:#e1d176cf;
+}
+#lname{
+    background-color:#e1d176cf;
+}
+#email{
+    background-color:#e1d176cf;
+}
+#password{
+    background-color:#e1d176cf;
+}
 
+#fname:focus{
+    background-color: #9453A6;
+}
+#lname:focus{
+    background-color: #9453A6;
+}
+#email:focus{
+    background-color: #9453A6;
+}
+#password:focus{
+    background-color: #9453A6;
+}
 
+#fname:hover{
+    background-color:#F2CC0F;
+}
+#lname:hover{
+    background-color:#F2CC0F;
+}
+#email:hover{
+    background-color:#F2CC0F;
+}
+#password:hover{
+    background-color:#F2CC0F;
+}
+
+label:hover{
+    color: var(--color-purple-bg);
+}
