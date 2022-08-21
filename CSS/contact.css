@@ -72,9 +72,14 @@ form{
 #password{
     background-color:#e1d176cf;
 }
+.text-area{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 #freetxt{
     background-color:#e1d176cf;
-    margin-right: 0.6%;
+    margin-right: 2%;
     border-left: 2px solid;
     border-top: 2px solid;
     border-right: 2px solid #777676;

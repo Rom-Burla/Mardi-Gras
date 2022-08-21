@@ -62,3 +62,15 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+let mobileImgContainer = document.createElement("div");
+mobileImgContainer.className = "mobile-img-container";
+let mobileImg = document.createElement("img");
+mobileImg.src = `${sliderPics[0].img}`;
+mobileImg.alt = `${sliderPics[0].alt}`;
+mobileImg.className = "mobile-img";
+let mobileImgDescription = document.createElement("div");
+mobileImgDescription.innerHTML = `<h1>${sliderPics[0].description}</h1>`;
+mobileImgDescription.className = "mobile-img-description";
+section.appendChild(mobileImgContainer);
+mobileImgContainer.appendChild(mobileImg);
+mobileImgContainer.appendChild(mobileImgDescription);
