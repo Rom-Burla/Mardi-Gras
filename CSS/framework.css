@@ -295,6 +295,7 @@ img{
   justify-content: center;
   margin: 20px;
   margin-top: 40px;
+  list-style: none;
 }
 .social-icons-footer a{
   color: var(--color-purple-bg);
