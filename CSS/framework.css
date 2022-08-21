@@ -153,6 +153,7 @@ img{
     justify-content: center;
     padding: 0.5rem;
     border-bottom: 1px solid;
+    margin-right: 6%;
   }
   .nav-header {
     padding: 0;
@@ -188,9 +189,7 @@ img{
     transform: scale(0.9);
     color: #f2f2f2a4;
   }
-  a{
-    order: 2;
-  }
+
   .mardi-gras-logo {
     order: 2;
     margin: 0;
