@@ -291,4 +291,16 @@ img{
   border-radius: 50px;
   width: 80%;
 }
+.social-icons-footer{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 40px;
+}
+.social-icons-footer a{
+  color: var(--color-purple-bg);
+}
+.social-icons-footer a:active{
+  color: #f2f2f2a4;;
+}
 /* end of footer style */

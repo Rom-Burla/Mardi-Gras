@@ -7,6 +7,7 @@ let modalArr = [];
 let modalContainer = document.createElement("div");
 let footerHeading = document.createElement("h3");
 let copyright = document.createElement("p");
+let socialIconsFoot = document.createElement("div");
 
 // responsive nav bar
 navToggle.addEventListener("click", () => {
@@ -54,6 +55,30 @@ for (let i = 0; i < sponsers.length; i++) {
 }
 //end of sponser modals
 
+footer.appendChild(socialIconsFoot);
+socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
+<li>
+                            <a href="https://www.facebook.com/MardiGrasNewOrleans">
+                                <i class="fab fa-facebook"></i>
+                                </a>
+                                </li>
+                                <li>
+                                <a
+                                href="https://twitter.com/MardiGrasNOLA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <i class="fab fa-twitter"></i>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="https://www.youtube.com/c/MardiGrasNewOrleans">
+                                <i class="fab fa-youtube"></i>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="https://www.instagram.com/nolamardigras">
+                                <i class="fab fa-instagram  "></i>
+                                </a>
+                        </li>
+                        </ul>`;
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Nir & Rom. All rights reserved.
