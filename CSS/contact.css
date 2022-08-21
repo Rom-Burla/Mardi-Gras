@@ -38,18 +38,6 @@ form{
     gap: 5px;
     width: 350px;
 }
-#fname{
-    margin-left: 3px;
-}
-#lname{
-    margin-left: 6px;
-}
-#email{
-    margin-right: 5px;
-}
-#password{
-    margin-right: 9px;
-}
 #err{
     margin-right: 7%;
     display: flex;
@@ -71,12 +59,15 @@ form{
 
 #fname{
     background-color:#e1d176cf;
+    margin-left: 3%;
 }
 #lname{
     background-color:#e1d176cf;
+    margin-left: 4%;
 }
 #email{
     background-color:#e1d176cf;
+    margin-left: 1%;
 }
 #password{
     background-color:#e1d176cf;
