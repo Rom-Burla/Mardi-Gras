@@ -4,6 +4,7 @@ let errors = [];
 let myForm = document.getElementById("my-form");
 let myErr = document.getElementById("err");
 
+// form validations
 myForm.addEventListener("submit", (evt) => {
   let { fname, lname, email, password, freetxt } = myForm.elements;
   let tempName = fname.value.trim();

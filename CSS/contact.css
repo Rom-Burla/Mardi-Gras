@@ -1,3 +1,4 @@
+/* global fonts and colors */
 :root{
 --font-primary-heading: "Henny Penny", cursive;
 --font-secondary-heading: "Pattaya", sans-serif;
@@ -10,6 +11,7 @@
 --color-black-fr: #0D0D0D;
 }
 
+/* contact form desktop style */
 .section{
 
     display: flex;
@@ -121,3 +123,4 @@ form{
 label:hover{
     color: var(--color-purple-bg);
 }
+/* end of contact page desktop style */

@@ -6,6 +6,7 @@ let slideContainer = document.createElement("div");
 slideContainer.className = "slide-container";
 section.appendChild(slideContainer);
 
+// slider
 for (let i = 0; i < 5; i++) {
   let slide = document.createElement("div");
   slide.classList = "slide";
@@ -43,10 +44,7 @@ nextSlide.addEventListener("click", (n) => {
   n = 1;
   showSlides((slideIndex += n));
 });
-console.log(slideIndex);
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+
 function showSlides(n) {
   let i;
 
@@ -62,6 +60,9 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
+//end of slider
+
+//mobile image
 let mobileImgContainer = document.createElement("div");
 mobileImgContainer.className = "mobile-img-container";
 let mobileImg = document.createElement("img");
@@ -74,3 +75,4 @@ mobileImgDescription.className = "mobile-img-description";
 section.appendChild(mobileImgContainer);
 mobileImgContainer.appendChild(mobileImg);
 mobileImgContainer.appendChild(mobileImgDescription);
+//end of mobile image
