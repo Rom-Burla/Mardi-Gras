@@ -34,6 +34,14 @@ myForm.addEventListener("submit", (evt) => {
     let msg = "Email isn't valid";
     errors.push(msg);
     evt.preventDefault();
+  } else if (!email.value.includes(".")) {
+    let msg = "Email isn't valid";
+    errors.push(msg);
+    evt.preventDefault();
+  } else if (email.value.length < 11) {
+    let msg = "Emails are at least 8 characters long";
+    errors.push(msg);
+    evt.preventDefault();
   }
   if (password.value.length == 0) {
     let msg = "You need to create a password";
