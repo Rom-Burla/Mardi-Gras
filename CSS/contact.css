@@ -72,6 +72,10 @@ form{
 #password{
     background-color:#e1d176cf;
 }
+#freetxt{
+    background-color:#e1d176cf;
+    margin-right: 1%;
+}
 
 #fname:focus{
     background-color: #9453A6;
@@ -85,6 +89,9 @@ form{
 #password:focus{
     background-color: #9453A6;
 }
+#freetxt:focus{
+    background-color: #9453A6;
+}
 
 #fname:hover{
     background-color:#F2CC0F;
@@ -96,6 +103,9 @@ form{
     background-color:#F2CC0F;
 }
 #password:hover{
+    background-color:#F2CC0F;
+}
+#freetxt:hover{
     background-color:#F2CC0F;
 }
 

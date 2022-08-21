@@ -5,7 +5,7 @@ let myForm = document.getElementById("my-form");
 let myErr = document.getElementById("err");
 
 myForm.addEventListener("submit", (evt) => {
-  let { fname, lname, email, password } = myForm.elements;
+  let { fname, lname, email, password, freetxt } = myForm.elements;
   let tempName = fname.value.trim();
   if (tempName.length == 0) {
     let msg = "You need to write your first name";
@@ -49,6 +49,11 @@ myForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
   } else if (password.value.length < 8) {
     let msg = "Password needs to be at least 8 characters";
+    errors.push(msg);
+    evt.preventDefault();
+  }
+  if (freetxt.value.length < 2) {
+    let msg = "You need to write something to us";
     errors.push(msg);
     evt.preventDefault();
   }
