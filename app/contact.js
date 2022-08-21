@@ -75,4 +75,7 @@ cityHallContact.innerHTML = `
 <p class="cityhall-address">Address: 1300 Perdido St, New Orleans, LA 70112.</p>
 <p class="cityhall-phone">Phone: 504-658-4000</p>
 <div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=1300%20Perdido%20St,%20New%20Orleans&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:750px;}</style><a href="https://www.embedgooglemap.net">google map location for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:750px;}</style></div></div>
+<div class="mapouter-mobile"><div class="gmap_canvas"><iframe width="400" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=1300%20Perdido%20St,%20New%20Orleans,%20LA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:400px;}</style><a href="https://www.embedgooglemap.net">google maps api html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:400px;}</style></div></div>
 `;
+
+
