@@ -52,6 +52,7 @@ section{
     grid-area: section;
     background-color: var(--color-green-bg);
     width: 100vw;
+    border-top: 1px solid;
 }
 article{
     grid-area: article;
@@ -160,7 +161,6 @@ img{
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    border-bottom: 1px solid;
     margin-right: 6%;
   }
   .nav-header {
@@ -261,7 +261,7 @@ img{
     transition: all 0.2s ease-in-out;
     background-color: white;
     border-radius: 20px;
-    border: 0px;
+    
   }
   .modal:nth-child(4){
   background-size: 72%;
