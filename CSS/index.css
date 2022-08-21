@@ -9,6 +9,10 @@
 --color-white-fr: #F2F2F2;
 --color-black-fr: #0D0D0D;
 }
+section{
+  background-color: var(--color-yellow-main-bg);
+}
+
 /* mobile style */
 /* slider won't display on mobile */
 .slide-container{
@@ -23,6 +27,27 @@
 .mobile-img-description{
   color: var(--color-purple-bg);
   text-align: center;
+}
+.mardi-explain{
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+}
+.mardi-explain p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mardi-explain p:first-child {
+  color:var(--color-purple-bg); 
+  
+}
+.mardi-explain p:nth-child(2) {
+  background-color: var(--color-green-bg);
+  color:var(--color-yellow-main-bg)
+}
+.mardi-explain p:nth-child(3) {
+  background-color: var(--color-purple-bg);
+  color:var(--color-green-bg)
 }
 /* end of mobile style */
 
