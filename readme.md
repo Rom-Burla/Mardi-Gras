@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app/framework.js" type="module"></script>
     <script src="./app/'Specific page JS file'"></script>
+    <link rel="icon" href="./images/Logos of contributars/Mardi Gras logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="./CSS/framework.css">
     <link rel="stylesheet" href="./CSS/'Specific page CSS'">
