@@ -46,8 +46,8 @@ for (let i = 0; i < obgArr.length; i++) {
   question.addEventListener("click", () => {
     answer.classList.toggle("answer-active");
     if (i === obgArr.length - 1) {
-      question.classList.remove("question");
-      question.classList.add("question-close");
+      question.classList.toggle("question");
+      question.classList.toggle("question-close");
     }
   });
 }
