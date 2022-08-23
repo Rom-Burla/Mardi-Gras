@@ -25,6 +25,15 @@ section{
 .faqContiner .question:nth-child(7){
     border-radius: 0 0 25px 25px;
 }
+.question-close{
+    border-radius:0 ;
+    background-color: var(--color-white-fr);
+    border-image: linear-gradient(to right , #260B3C, #25e01e);
+    padding: 20px 10px;   
+}
+.question-close:hover{
+    background-color:var(--color-yellow-main-bg);
+}
 .faqContiner .answer:last-child{
     border-radius:0 0 25px 25px;
 }

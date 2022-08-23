@@ -45,8 +45,9 @@ for (let i = 0; i < obgArr.length; i++) {
   //add event on the click
   question.addEventListener("click", () => {
     answer.classList.toggle("answer-active");
-    if (i !== 0) {
-      question.style.borderRadius = "0";
+    if (i === obgArr.length - 1) {
+      question.classList.remove("question");
+      question.classList.add("question-close");
     }
   });
 }
