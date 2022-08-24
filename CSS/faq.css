@@ -12,46 +12,75 @@
 section{
    padding-top: 20px;
    padding-bottom: 20px;
+   background-color: var(--color-yellow-main-bg);
 
 }
 
 .faqContiner{
     width: 70vw;
     margin: auto;  
+      border: solid 5px transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, #9453A6, #77a334);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 .faqContiner .question:first-child{
     border-radius:25px 25px 0 0;
 }
 .faqContiner .question:nth-child(7){
     border-radius: 0 0 25px 25px;
+    border-width: 0;
 }
-.question-close{
-    border-radius:0 ;
-    background-color: var(--color-white-fr);
-    border-image: linear-gradient(to right , #260B3C, #25e01e);
-    padding: 20px 10px;   
-}
-.question-close:hover{
-    background-color:var(--color-yellow-main-bg);
-}
+
 .faqContiner .answer:last-child{
     border-radius:0 0 25px 25px;
+    border-width: 0;
 }
 
 .question{
+    box-sizing: borderbox-box;
     background-color: var(--color-white-fr);
-    border-image: linear-gradient(to right , #260B3C, #25e01e);
-    padding: 20px 10px;       
+    padding: 20px 10px; 
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(0.25turn, #9453A6, rgba(255,249,34),#77a334);
+    border-image-slice: 1;
+    color: #5e8328;
+    
 }
 .question:hover{
-    background-color:var(--color-yellow-main-bg);
+    background-color:#c7c6c6;
+}
+.question:active{
+    background-color:#aca9a9;
+ 
+}
+.question-active{
+    border-radius:0 ;
+    background-color: var(--color-white-fr);
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(0.25turn,#9453A6, rgba(255,249,34),#77a334);
+    border-image-slice: 1;
+    padding: 20px 10px;   
+}
+.question-active:hover{
+    background-color:#c7c6c6;
+}
+.question-active:active{
+    background-color:#aca9a9;
 }
 .answer{
     display: none;
 }
 .answer-active{
     display: block;
-    background-color: var(--color-purple-bg);
+  background-color:#aca9a9;
     padding: 30px 10px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(0.25turn,#9453A6, rgba(255,249,34),#77a334);
+    border-image-slice: 1;
+    padding: 20px 10px;   
+    color: var(--color-purple-bg);
 }
 

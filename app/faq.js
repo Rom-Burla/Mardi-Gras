@@ -33,7 +33,6 @@ for (let i = 0; i < obgArr.length; i++) {
   answer.className = "answer";
   faqContiner.appendChild(question);
   faqContiner.appendChild(answer);
-
   //insert data
   question.innerHTML += `
     <p>${i + 1}. question : ${obgArr[i].question}</p>`;
@@ -47,7 +46,7 @@ for (let i = 0; i < obgArr.length; i++) {
     answer.classList.toggle("answer-active");
     if (i === obgArr.length - 1) {
       question.classList.toggle("question");
-      question.classList.toggle("question-close");
+      question.classList.toggle("question-active");
     }
   });
 }
