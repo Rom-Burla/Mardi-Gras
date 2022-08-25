@@ -14,10 +14,76 @@ section{
     border-bottom: 1px solid rgba(190, 190, 190, 0.548);
 }
 .image-title{
-  text-align: center;
   color: var(--color-purple-bg);
+  text-align: center;
+  margin: 20px;
   font-size: 4vw;
 }
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+      .image-column {
+    flex: 45%;
+    max-width: 45%;
+  }
+    .image-modal-content{
+        width: 100%;
+    }
+
+.video-title{
+  color: var(--color-purple-bg);
+  text-align: center;
+  margin: 20px;
+  font-size: 4vw;
+}
+.video-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.video-column{
+  text-align: center;
+  flex: 50%;
+  padding: 30px;
+}
+
+
+
+.image-modal-content, .image-modal-caption{
+    animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px){
+
+    section{
+        padding-top: 110px;
+    }
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -79,49 +145,6 @@ section{
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
 .video-column{
 width: 100%;
-}
-@media only screen and (max-width: 800px){
-      .image-column {
-    flex: 45%;
-    max-width: 45%;
-  }
-    .image-modal-content{
-        width: 100%;
-    }
-}
-.video-title{
-  color: var(--color-purple-bg);
-  text-align: center;
-  margin: 20px;
-  font-size: 4vw;
-}
-.video-row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-}
-.video-column{
-  text-align: center;
-  flex: 50%;
-  padding: 30px;
-}
+}}

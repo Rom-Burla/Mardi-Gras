@@ -52,7 +52,11 @@ section{
 /* end of mobile style */
 
 /* desktop style */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px){ 
+    section{
+        padding-top: 110px;
+    }
+
 .slide-container {
   display: block;
   position: relative;
