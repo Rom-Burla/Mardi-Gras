@@ -9,6 +9,8 @@
 --color-white-fr: #F2F2F2;
 --color-black-fr: #0D0D0D;
 }
+
+
 section{
    padding-top: 20px;
    padding-bottom: 20px;
@@ -83,4 +85,7 @@ section{
     padding: 20px 10px;   
     color: var(--color-purple-bg);
 }
-
+@media screen and (min-width: 800px) {
+    section{
+   padding-top: 130px;
+}}
