@@ -62,7 +62,7 @@ videoArray.forEach((video) => {
   videoColumn.className = "video-column";
   videoRow.appendChild(videoColumn);
   videoColumn.innerHTML += `<iframe width="400" height="200" src="${video}"
-                title="YouTube video player" frameborder="1"
+                title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 `;

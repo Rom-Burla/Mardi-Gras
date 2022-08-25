@@ -42,6 +42,8 @@ body{
 /* tags global settings */
 header{
   border-bottom: 1px solid rgba(190, 190, 190, 0.548);
+  position: fixed;
+  z-index: 1;
 }
 nav{
      grid-area: nav;
