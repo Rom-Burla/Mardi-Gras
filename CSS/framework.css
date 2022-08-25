@@ -41,7 +41,7 @@ body{
 
 /* tags global settings */
 header{
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.548);
 }
 nav{
      grid-area: nav;
@@ -52,7 +52,6 @@ section{
     grid-area: section;
     background-color: var(--color-green-bg);
     width: 100vw;
-    border-top: 1px solid;
 }
 article{
     grid-area: article;

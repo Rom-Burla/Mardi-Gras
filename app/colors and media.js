@@ -52,9 +52,16 @@ const imgArray = [
 ];
 
 let videoArray = [
-  {
-    //search "mardi gras" on youtube (click share in video and choose embed, copy the link it gives you)
-  },
+  "https://www.youtube.com/embed/EkIZwXbSh-Y",
+  "https://www.youtube.com/embed/q7qwWRdj3sE",
+  "https://www.youtube.com/embed/C8mJ2C2cbd0",
+  "https://www.youtube.com/embed/Sw_OgnXm2pE",
+  "https://www.youtube.com/embed/ymP78Q0KBCc",
+  "https://www.youtube.com/embed/SI3zs1A_SpA",
+  "https://www.youtube.com/embed/x5VJe_XIuhM",
+  "https://www.youtube.com/embed/7J3ZKkmQxEE",
+  "https://www.youtube.com/embed/pBFSY4RM0p4",
+  "https://www.youtube.com/embed/48AvfYuk6OY",
 ];
 
-export { colorArray, imgArray };
+export { colorArray, imgArray, videoArray };

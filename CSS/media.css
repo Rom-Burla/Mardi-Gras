@@ -1,15 +1,35 @@
+:root{
+--font-primary-heading: "Henny Penny", cursive;
+--font-secondary-heading: "Pattaya", sans-serif;
+--font-text: 'Roboto', sans-serif;
+/* color setup */
+--color-purple-bg: #9453A6;
+--color-green-bg: #8CBF3F;
+--color-yellow-main-bg: #F2CC0F;
+--color-white-fr: #F2F2F2;
+--color-black-fr: #0D0D0D;
+}
 section{
     padding: 20px;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.548);
+}
+.image-title{
+  text-align: center;
+  color: var(--color-purple-bg);
+  font-size: 4vw;
 }
 .image-row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  justify-content: center;
 }
 .image-column{
-    flex: 25%;
+    flex: 22%;
   max-width: 25%;
   padding: 0 4px;
+  margin: 15px;
+  text-align: center;
 }
 .image-column img {
   margin-top: 8px;
@@ -75,12 +95,33 @@ section{
   text-decoration: none;
   cursor: pointer;
 }
+.video-column{
+width: 100%;
+}
 @media only screen and (max-width: 800px){
       .image-column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 45%;
+    max-width: 45%;
   }
     .image-modal-content{
         width: 100%;
     }
+}
+.video-title{
+  color: var(--color-purple-bg);
+  text-align: center;
+  margin: 20px;
+  font-size: 4vw;
+}
+.video-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.video-column{
+  text-align: center;
+  flex: 50%;
+  padding: 30px;
 }

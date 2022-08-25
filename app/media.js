@@ -1,7 +1,11 @@
-import { imgArray } from "./colors and media.js";
+import { imgArray, videoArray } from "./colors and media.js";
 
 let section = document.getElementsByTagName("section")[0];
 let article = document.getElementsByTagName("article")[0];
+let imgTitle = document.createElement("h1");
+imgTitle.className = "image-title";
+imgTitle.textContent = "Images";
+section.appendChild(imgTitle);
 let imgRow = document.createElement("div");
 imgRow.className = "image-row";
 section.appendChild(imgRow);
@@ -46,3 +50,20 @@ for (let i = 0; i < imgArray.length; i++) {
     });
   }
 }
+let videoTitle = document.createElement("h1");
+videoTitle.textContent = "Videos";
+videoTitle.className = "video-title";
+article.appendChild(videoTitle);
+let videoRow = document.createElement("div");
+videoRow.className = "video-row";
+article.appendChild(videoRow);
+videoArray.forEach((video) => {
+  let videoColumn = document.createElement("div");
+  videoColumn.className = "video-column";
+  videoRow.appendChild(videoColumn);
+  videoColumn.innerHTML += `<iframe width="400" height="200" src="${video}"
+                title="YouTube video player" frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+`;
+});
