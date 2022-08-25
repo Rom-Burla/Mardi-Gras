@@ -1,4 +1,4 @@
-import { colorArray } from "./colors.js";
+import { colorArray } from "./colors and media.js";
 let section = document.getElementsByTagName("section")[0];
 
 const obgArr = [
