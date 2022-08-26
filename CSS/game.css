@@ -1,14 +1,2 @@
 
 
-.btn{
-    color: blue;
-    height: 5rem;
-    width: 5rem;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
-
-.radio-label{
-    background-color: aliceblue;
-}

@@ -7,6 +7,7 @@ let container =  document.createElement("div");
 let innerDiv =  document.createElement("div");
 let inputRadio = document.createElement("input");
 let labelRadio = document.createElement("label");
+let btn = document.createElement("button");
 const ArreyRd=[];
 
 let questionObj= {
@@ -40,7 +41,7 @@ innerDiv.appendChild(inputRadio);
 
 section.appendChild(container)
 
-let btn = document.createElement("button");
+
 section.appendChild(btn)
 
 
