@@ -8,6 +8,7 @@ let modalContainer = document.createElement("div");
 let footerHeading = document.createElement("h3");
 let copyright = document.createElement("p");
 let socialIconsFoot = document.createElement("div");
+let audio = document.createElement("div");
 
 // responsive nav bar
 navToggle.addEventListener("click", () => {
@@ -79,8 +80,18 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
                                 </a>
                         </li>
                         </ul>`;
+audio.innerHTML = `<audio controls loop playsinline id="website-song">
+                                                        <source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3"
+                                                            type="audio/mpeg">
+                                                    </audio>`;
+footer.appendChild(audio);
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Rom & Nir. All rights reserved.
 </p>`;
+document.addEventListener("DOMContentLoaded", musicPlay);
+function musicPlay() {
+  document.getElementById("website-song").play();
+  document.removeEventListener("click", musicPlay);
+}
 // end of footer
