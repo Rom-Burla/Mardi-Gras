@@ -93,7 +93,6 @@ article{
     margin-top: 5px;
 }
 
-
 .text-area{
     display: flex;
     flex-direction: column;
@@ -210,19 +209,19 @@ form{
 }
 
 #fname:focus{
-    background-color: #9453A6;
+    background-color: #9453a662;
 }
 #lname:focus{
-    background-color: #9453A6;
+    background-color: #9453a662;
 }
 #email:focus{
-    background-color: #9453A6;
+    background-color: #9453a662;
 }
 #password:focus{
-    background-color: #9453A6;
+    background-color: #9453a662;
 }
 #freetxt:focus{
-    background-color: #9453A6;
+    background-color: #9453a662;
 }
 
 #fname:hover{

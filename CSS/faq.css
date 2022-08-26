@@ -77,7 +77,7 @@ section{
 }
 .answer-active{
     display: block;
-  background-color:#aca9a9;
+  background-color:#99db78;
     padding: 30px 10px;
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(0.25turn,#9453A6, rgba(255,249,34),#77a334);
