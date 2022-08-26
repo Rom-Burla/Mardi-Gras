@@ -81,6 +81,6 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
                         </ul>`;
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
-Copyright &copy; 2022 by Nir & Rom. All rights reserved.
+Copyright &copy; 2022 by Rom & Nir. All rights reserved.
 </p>`;
 // end of footer
