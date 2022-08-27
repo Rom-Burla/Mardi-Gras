@@ -12,15 +12,12 @@
 
 
 section{
-   padding-top: 20px;
-   padding-bottom: 20px;
    background-color: var(--color-yellow-main-bg);
-
 }
 
 .faqContiner{
     width: 70vw;
-    margin: auto;  
+    margin: 20px auto;  
       border: solid 5px transparent;
   border-radius: 30px;
   background-image: linear-gradient(white, white), 
@@ -86,6 +83,4 @@ section{
     color: var(--color-purple-bg);
 }
 @media screen and (min-width: 800px) {
-    section{
-   padding-top: 130px;
-}}
+}
