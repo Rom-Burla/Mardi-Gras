@@ -8,17 +8,20 @@ let innerDiv =  document.createElement("div");
 let inputRadio = document.createElement("input");
 let labelRadio = document.createElement("label");
 let btn = document.createElement("button");
-const ArreyRd=[];
+const ArreyRd=[
 
-let questionObj= {
+ {
+
     question:"nir",
     answer1: "rrr",
     answer2:"sds",
     answer3:"sdsdfsds",
  
-    };
+    },
+    
 
 
+];
 console.log(questionObj);
 console.log(container);
 
