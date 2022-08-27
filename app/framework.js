@@ -80,10 +80,10 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
                                 </a>
                         </li>
                         </ul>`;
-audio.innerHTML = `<audio controls loop playsinline id="website-song">
+/* audio.innerHTML = `<audio controls loop playsinline id="website-song">
                                                         <source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3"
                                                             type="audio/mpeg">
-                                                    </audio>`;
+                                                    </audio>`; */
 footer.appendChild(audio);
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
