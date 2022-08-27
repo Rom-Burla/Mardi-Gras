@@ -8,8 +8,10 @@ let modalContainer = document.createElement("div");
 let footerHeading = document.createElement("h3");
 let copyright = document.createElement("p");
 let socialIconsFoot = document.createElement("div");
+let navCenter = document.getElementsByClassName("nav-center")[0];
 let audio = document.createElement("div");
-
+audio.className = "mardi-song";
+navCenter.appendChild(audio);
 // responsive nav bar
 navToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
@@ -59,39 +61,38 @@ for (let i = 0; i < sponsers.length; i++) {
 footer.appendChild(socialIconsFoot);
 socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
 <li>
-                            <a href="https://www.facebook.com/MardiGrasNewOrleans">
-                                <i class="fab fa-facebook"></i>
-                                </a>
-                                </li>
-                                <li>
-                                <a
-                                href="https://twitter.com/MardiGrasNOLA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                                <i class="fab fa-twitter"></i>
-                                </a>
-                                </li>
-                                <li>
-                                <a href="https://www.youtube.com/c/MardiGrasNewOrleans">
-                                <i class="fab fa-youtube"></i>
-                                </a>
-                                </li>
-                                <li>
-                                <a href="https://www.instagram.com/nolamardigras">
-                                <i class="fab fa-instagram  "></i>
-                                </a>
-                        </li>
-                        </ul>`;
-audio.innerHTML = `<audio controls loop playsinline id="website-song">
-                                                        <source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3"
-                                                            type="audio/mpeg">
-                                                    </audio>`;
-document.getElementsByTagName("header")[0].appendChild(audio);
+  <a href="https://www.facebook.com/MardiGrasNewOrleans">
+   <i class="fab fa-facebook"></i></a>
+</li>
+<li>
+  <a href="https://twitter.com/MardiGrasNOLA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+  <i class="fab fa-twitter"></i></a>
+</li>
+<li>
+  <a href="https://www.youtube.com/c/MardiGrasNewOrleans">
+   <i class="fab fa-youtube"></i>
+  </a>
+</li>
+<li>
+  <a href="https://www.instagram.com/nolamardigras">
+   <i class="fab fa-instagram  "></i>
+  </a>
+</li>
+</ul>`;
+
+if (window.matchMedia("(min-width: 800px)")) {
+  audio.innerHTML = `
+<audio controls loop playsinline id="website-song"><source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3" type="audio/mpeg"></audio>`;
+  document.addEventListener("DOMContentLoaded", musicPlay);
+  function musicPlay() {
+    document.getElementById("website-song").play();
+    document.removeEventListener("click", musicPlay);
+  }
+}
+
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Rom & Nir. All rights reserved.
 </p>`;
-document.addEventListener("DOMContentLoaded", musicPlay);
-function musicPlay() {
-  document.getElementById("website-song").play();
-  document.removeEventListener("click", musicPlay);
-}
+
 // end of footer
