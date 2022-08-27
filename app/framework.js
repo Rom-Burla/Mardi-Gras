@@ -84,7 +84,7 @@ audio.innerHTML = `<audio controls loop playsinline id="website-song">
                                                         <source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3"
                                                             type="audio/mpeg">
                                                     </audio>`;
-footer.appendChild(audio);
+document.getElementsByTagName("header")[0].appendChild(audio);
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
 Copyright &copy; 2022 by Rom & Nir. All rights reserved.
