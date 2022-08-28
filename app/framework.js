@@ -83,11 +83,11 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
 if (window.matchMedia("(min-width: 800px)")) {
   audio.innerHTML = `
 <audio controls loop playsinline id="website-song"><source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3" type="audio/mpeg"></audio>`;
-  document.addEventListener("DOMContentLoaded", musicPlay);
-  function musicPlay() {
-    document.getElementById("website-song").play();
-    document.removeEventListener("click", musicPlay);
-  }
+  // document.addEventListener("DOMContentLoaded", musicPlay);
+  // function musicPlay() {
+  //   document.getElementById("website-song").play();
+  //   document.removeEventListener("click", musicPlay);
+  // }
 }
 
 footer.appendChild(copyright);
