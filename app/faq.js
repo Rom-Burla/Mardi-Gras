@@ -3,20 +3,20 @@ let section = document.getElementsByTagName("section")[0];
 
 const obgArr = [
   {
-    question: "how about the....?????",
-    answer: "fdslkjfhsdjklhfkljdshfkjhdsfkjhds",
+    question: "When was the first Mardi Gras?",
+    answer: "The first Mardi Gras parade was held in New Orleans on Feb. 24, 1857 by the Krewe of Comus. They began the tradition of presenting a parade with floats and following it with a ball for the krewe and their guests",
   },
   {
-    question: "hi how are you....?????",
-    answer: "fdslkjfhsdjklhfkljdshfkjhdsfkjhds",
+    question: "What is the significance of the Mardi Gras colors, and where did they come from?",
+    answer: "Rex, the King of Carnival, selected the Mardi Gras colors and assigned meaning to them in 1892. Purple stands for justice, green for faith, and gold for power.",
   },
   {
-    question: "do you have....?????",
-    answer: "fdslkjfhsdjklhfkljdshfkjhdsfkjhds",
+    question: "Why are masks worn?",
+    answer: "By law, float riders must always have a mask on. On Fat Tuesday, masking is legal for everyone else, and the elaborate masks that some wear add to the fun.",
   },
   {
-    question: "do you want to....?????",
-    answer: "fdslkjfhsdjklhfkljdshfkjhdsfkjhds",
+    question: "How does Mardi Gras benefit the New Orleans economy?",
+    answer: "Economic impact reports indicate that Mardi Gras generates over $1 billion in annual spending.",
   },
 ];
 
