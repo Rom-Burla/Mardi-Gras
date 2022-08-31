@@ -122,9 +122,20 @@ article{
 }
 #freetxt:focus{
     background-color: #9453A6;
+    
 }
 
+#freetxt{
+    border-radius: 10px;
+    
+    padding: 50px;
 
+}
+
+#fname,#lname,#email,#password{
+    border: 0.5;
+    border-radius: 10px;
+}
 
 
 

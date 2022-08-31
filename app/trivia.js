@@ -272,11 +272,12 @@ submitBtn.addEventListener("click", (e) => {
   if (answers.includes(undefined)) {
     alert("You didn't answer all the questions!");
   } else if (!answers.includes(undefined)) {
+    article.style.paddingTop="20px";
     for (let i = 0; i < answers.length; i++) {
       pointsDiv.innerHTML += `
     <h3>The question was: ${ArrayRd[i].question}</h3><br>
     <p style="color: blue">Your answer was: ${answers[i]}</p><br>
-    <p style="color: aquamarine">The right answer was: ${rightAnswers[i]}</p><br>
+    <p style="color: darkblue">The right answer was: ${rightAnswers[i]}</p><br>
     `;
       if (answers[i] === rightAnswers[i]) {
         pointsDiv.innerHTML += `<p style="color: green">You were right!!!</p><br>`;
