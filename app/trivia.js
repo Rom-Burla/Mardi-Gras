@@ -272,7 +272,7 @@ submitBtn.addEventListener("click", (e) => {
   if (answers.includes(undefined)) {
     alert("You didn't answer all the questions!");
   } else if (!answers.includes(undefined)) {
-    article.style.paddingTop="20px";
+    article.style.paddingTop = "20px";
     for (let i = 0; i < answers.length; i++) {
       pointsDiv.innerHTML += `
     <h3>The question was: ${ArrayRd[i].question}</h3><br>

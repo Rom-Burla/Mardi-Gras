@@ -33,6 +33,7 @@ let nextSlide = document.createElement("a");
 nextSlide.innerHTML = "&#10095;";
 nextSlide.className = "next";
 slideContainer.appendChild(nextSlide);
+let activeTimer;
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -46,8 +47,14 @@ nextSlide.addEventListener("click", (n) => {
   showSlides((slideIndex += n));
 });
 
+function timedSlides(n) {
+  n = n || 1;
+  showSlides((slideIndex += n));
+}
+
 function showSlides(n) {
   let i;
+  if (activeTimer) window.clearTimeout(activeTimer);
 
   console.log(slides);
   if (n > slides.length) {
@@ -60,6 +67,7 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+  activeTimer = window.setTimeout(timedSlides, 4000);
 }
 //end of slider
 
