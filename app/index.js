@@ -67,7 +67,7 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
-  activeTimer = window.setTimeout(timedSlides, 4000);
+  activeTimer = window.setTimeout(timedSlides, 5000);
 }
 //end of slider
 
