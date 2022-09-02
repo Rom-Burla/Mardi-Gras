@@ -1,6 +1,6 @@
 "use strict";
 import { sponsers } from "./sponsers.js";
-let navToggle = document.querySelector(".nav-toggle");
+let navToggle = document.querySelector(".fas");
 let links = document.querySelector(".links");
 let footer = document.querySelector("footer");
 let modalArr = [];
@@ -8,16 +8,25 @@ let modalContainer = document.createElement("div");
 let footerHeading = document.createElement("h3");
 let copyright = document.createElement("p");
 let socialIconsFoot = document.createElement("div");
-let navCenter = document.getElementsByClassName("nav-center")[0];
-let audio = document.createElement("div");
-audio.className = "mardi-song";
-navCenter.appendChild(audio);
+let triviaContainer = document.createElement("div");
+triviaContainer.className = "trivia-container";
+let triviaBtn = document.createElement("button");
+triviaBtn.textContent = "Trivia";
+triviaBtn.className = "trivia-game";
+triviaContainer.appendChild(triviaBtn);
+footer.appendChild(triviaContainer);
 // responsive nav bar
 navToggle.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
 // end of responsive nav bar
-
+triviaBtn.addEventListener("click", () => {
+  window.open(
+    "./trivia.html",
+    "_blank",
+    "toolbar=yes,scrollbars=yes,resizable=yes,width=800,height=800"
+  );
+});
 // footer
 footer.appendChild(footerHeading);
 footerHeading.innerHTML = `Our Festival's Sponsers`;
@@ -79,16 +88,6 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
   </a>
 </li>
 </ul>`;
-
-if (window.matchMedia("(min-width: 800px)")) {
-  audio.innerHTML = `
-<audio controls loop playsinline id="website-song"><source src="./images/Music/new_orleans_mardis_gras_proud_music_preview.mp3" type="audio/mpeg"></audio>`;
-  // document.addEventListener("DOMContentLoaded", musicPlay);
-  // function musicPlay() {
-  //   document.getElementById("website-song").play();
-  //   document.removeEventListener("click", musicPlay);
-  // }
-}
 
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">

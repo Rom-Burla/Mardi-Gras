@@ -51,7 +51,7 @@ const sponsers = [
     name: "Premium Parking - P402",
     logo: "../images/Logos of contributars/Premium_Parking_Logo.jpg",
     image:
-      "https://www.way.com/way-service/images/listing_image/Listing_1821652_img",
+      "https://lh3.googleusercontent.com/p/AF1QipNcEaA1-_sk69WOPMadFxR-h9Gl6j4Nhcfn_x9s=s1600-w400",
     description: `We live at the intersection of parking and technology. We are a technology company, a parking operator, and network of parking advisors to bring it all together. We built our own custom cloud-based parking management software to run our locations—now you can use it to upgrade yours. We offer an enterprise-class agile solution that's simpler, more powerful and more affordable than the disconnected hardware and app-based offerings of the legacy parking industry giants and venture capital dorm room startups.`,
     website: "https://www.premiumparking.com/P402",
     address: `300 N Peters Street, New Orleans, LA 70130`,

@@ -8,6 +8,8 @@ triviaHead.textContent = "Trivia Quiz!";
 container.appendChild(triviaHead);
 let triviaForm = document.createElement("form");
 container.appendChild(triviaForm);
+triviaForm.innerHTML =
+  "<p>Answer all the questions right to get a special prize!</p>";
 triviaForm.method = "get";
 let points = 0;
 let submitBtn = document.createElement("input");
@@ -289,5 +291,14 @@ submitBtn.addEventListener("click", (e) => {
     pointsDiv.innerHTML += `<h1>Your score is: ${points} out of 10</h1>`;
     pointsDiv.style.textAlign = "center";
     e.preventDefault();
+  }
+  if (points === 10) {
+    pointsDiv.innerHTML += `<h1>You answered all questions right!!!
+    You are the Mardi Gras trivia champion!!!<br>
+    Come to "Cafe Du Monde" in New Orleans to get your free King Cake!</h1>`;
+    pointsDiv.style.margin = "20px";
+  }
+  if (points > 0) {
+    submitBtn.style.display = "none";
   }
 });

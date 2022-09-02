@@ -7,6 +7,28 @@ let slideContainer = document.createElement("div");
 slideContainer.className = "slide-container";
 section.appendChild(slideContainer);
 
+// Countdown timer until MardiGras
+
+let countDown = document.createElement("div");
+countDown.className = "countdown";
+
+let mardiDate23 = new Date("Feb 21, 2023 00:00:00.001 CST").getTime();
+
+setInterval(() => {
+  let present = new Date().getTime();
+  let timeLeft = mardiDate23 - present;
+  let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  countDown.innerHTML = `<h3>Time left 'til Mardi Gras 2023!</h3><br><span class="count-element">${days}</span> <span class="count-element">${hours}</span><span class="count-element">${minutes}</span><span class="count-element">${seconds}</span><br><span class="date-elements"><h4>Days</h4></span><span class="date-elements"><h4>Hours</h4></span><span class="date-elements"><h4>Minutes</h4></span><span class="date-elements"><h4>Seconds</h4></span>`;
+
+  if (timeLeft < 0) {
+    i++;
+  }
+}, 1000);
+section.appendChild(countDown);
 // slider
 for (let i = 0; i < 5; i++) {
   let slide = document.createElement("div");
