@@ -354,12 +354,14 @@ img{
 /* end of header's desktop style */
 
 .trivia-container{
-  width: 100vw;
+  width: 98vw;
   height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-yellow-main-bg);
+  background-color: var(--color-purple-bg);
+  border: #F2CC0F double 2px;
+  border-radius: 25px;
 }
 .trivia-game{
   background-color: var(--color-green-bg);
