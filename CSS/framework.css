@@ -266,6 +266,7 @@ img{
       position: fixed;
     z-index: 1;
     border-bottom: 1px solid rgba(190, 190, 190, 0.548);
+    height: 10vh;
   }
   section{
     padding-top: 18.18vh;

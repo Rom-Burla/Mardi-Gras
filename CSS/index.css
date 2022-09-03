@@ -10,7 +10,7 @@
 --color-black-fr: #0D0D0D;
 }
 section{
-  background-color: var(--color-yellow-main-bg);
+  background-color: var(--color-purple-bg);
 }
 
 /* mobile style */
@@ -25,8 +25,8 @@ header{
   position: absolute;
   z-index: 1;
   width: 40%;
-  height: 15%;
-  top: 40%;
+  height: 8%;
+  top: 28%;
   margin-left: 28%;
   background-color: #8cbf3fc5;
   text-align: center;
@@ -97,6 +97,7 @@ header{
   background-color: var(--color-purple-bg);
   color:var(--color-green-bg)
 }
+
 @media screen and (min-width: 520px){
   header{
   z-index: 2;
@@ -108,8 +109,8 @@ header{
   position: absolute;
   z-index: 1;
   width: 40%;
-  height: 22%;
-  top: 40%;
+  height: 15%;
+  top: 30%;
   margin-left: 28%;
   background-color: #8cbf3fc5;
   text-align: center;

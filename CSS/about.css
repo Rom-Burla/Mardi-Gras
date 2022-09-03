@@ -10,6 +10,9 @@
 --color-white-fr: #F2F2F2;
 --color-black-fr: #0D0D0D;
 }
+section{
+    background-color: var(--color-purple-bg);
+}
 .about-header{
     background-color:var(--color-green-bg);
     color: var(--color-purple-bg);

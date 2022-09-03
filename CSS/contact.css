@@ -74,7 +74,7 @@ article{
     
 }
 
-.input-div label{
+form label{
     display: none;
 }
 
@@ -179,7 +179,7 @@ form{
     gap: 5px;
     width: 35vw;
 }
-.input-div label{
+form label{
     display: block;
 }
 
