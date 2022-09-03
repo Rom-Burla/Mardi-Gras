@@ -48,8 +48,14 @@
 
 .mayor-img{
     text-align: center;
+    margin: 20px;
+    
 }
 
+.mayor-img img{
+    border: #2ce10d solid 2px;
+    border-radius: 30px;
+}
 .about-mayor{
 
     color: var(--color-white-fr);

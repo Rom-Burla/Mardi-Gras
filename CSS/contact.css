@@ -74,6 +74,10 @@ article{
     
 }
 
+.input-div label{
+    display: none;
+}
+
 #fname{
     background-color:#e1d176cf;
     margin-top: 5px;
@@ -87,6 +91,10 @@ article{
     margin-top: 5px;
 }
 #password{
+    background-color:#e1d176cf;
+    margin-top: 5px;
+}
+#passwordConfirm{
     background-color:#e1d176cf;
     margin-top: 5px;
 }
@@ -120,6 +128,9 @@ article{
 #password:focus{
     background-color: #9453A6;
 }
+#passwordConfirm:focus{
+    background-color: #9453A6;
+}
 #freetxt:focus{
     background-color: #9453A6;
     
@@ -127,12 +138,11 @@ article{
 
 #freetxt{
     border-radius: 10px;
-    
     padding: 50px;
 
 }
 
-#fname,#lname,#email,#password{
+#fname,#lname,#email,#password,#passwordConfirm{
     border: 0.5;
     border-radius: 10px;
 }
@@ -169,6 +179,14 @@ form{
     gap: 5px;
     width: 35vw;
 }
+.input-div label{
+    display: block;
+}
+
+.input-div input::placeholder{
+   color: transparent;
+}
+
 #err{
     margin-right: 7%;
     display: flex;
@@ -203,6 +221,12 @@ form{
 #password{
     background-color:#e1d176cf;
 }
+#passwordConfirm{
+    background-color:#e1d176cf;
+    margin-right: 2%;
+}
+
+
 .text-area{
     display: flex;
     flex-direction: column;
@@ -216,7 +240,9 @@ form{
     border-right: 2px solid #777676;
     border-bottom: 2px solid #777676;
 }
-
+#freetxt::placeholder{
+    color: transparent;
+}
 #fname:focus{
     background-color: #9453a662;
 }
@@ -227,6 +253,9 @@ form{
     background-color: #9453a662;
 }
 #password:focus{
+    background-color: #9453a662;
+}
+#passwordConfirm:focus{
     background-color: #9453a662;
 }
 #freetxt:focus{
@@ -243,6 +272,9 @@ form{
     background-color:#F2CC0F;
 }
 #password:hover{
+    background-color:#F2CC0F;
+}
+#passwordConfirm:hover{
     background-color:#F2CC0F;
 }
 #freetxt:hover{

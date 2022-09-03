@@ -139,7 +139,7 @@ header{
   align-items: center;
   font-family: var(--font-secondary-heading);
   font-size: 0.8em;
-  color: rgb(209, 178, 3);
+  color: rgb(96, 82, 11);
 }
 .date-elements{
   flex: 25%;
@@ -227,7 +227,7 @@ header{
   align-items: center;
   font-family: var(--font-secondary-heading);
   font-size: 0.9em;
-  color: rgb(209, 178, 3);
+  color: rgb(96, 82, 11);
 }
 .date-elements{
   flex: 25%;
@@ -371,7 +371,7 @@ header{
   align-items: center;
   font-family: var(--font-secondary-heading);
   font-size: 1em;
-  color: rgb(209, 178, 3);
+  color: rgb(96, 82, 11);
 }
 .date-elements{
   flex: 25%;
@@ -515,7 +515,7 @@ header{
   justify-content: center;
   align-items: center;
   font-family: var(--font-secondary-heading);
-  color: rgb(209, 178, 3);
+  color: rgb(96, 82, 11);
 }
 .date-elements{
   flex: 25%;
