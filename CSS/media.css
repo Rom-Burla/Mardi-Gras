@@ -24,16 +24,13 @@ section{
   padding: 0 4px;
   justify-content: center;
 }
-      .image-column {
-    flex: 45%;
-    max-width: 45%;
-    margin: 5px;
-  }
+
   .image-gallery{
      border-radius: 15px;
   cursor: pointer;
   transition: 0.3s;
   border: #9453A6 double 2px;
+  margin: 10px;
 }
     .image-modal-content{
         width: 100%;
@@ -57,10 +54,6 @@ section{
   flex: 100%;
   padding: 30px;
 }
-iframe{
-  width: 100vw
-}
-
 
 .image-modal-content, .image-modal-caption{
     animation-name: zoom;
@@ -149,6 +142,7 @@ iframe{
   padding: 10px 0;
   height: 150px;
 }
+
 .image-modal-content, .image-modal-caption{
     animation-name: zoom;
   animation-duration: 0.6s;
@@ -159,7 +153,7 @@ iframe{
 }
 .video-column{
 width: 100%;
-
+flex: 40%;
 }}
 
 iframe{
