@@ -89,9 +89,10 @@ socialIconsFoot.innerHTML = `<ul class="social-icons-footer">
 </li>
 </ul>`;
 
+let year = new Date().getFullYear();
 footer.appendChild(copyright);
 copyright.innerHTML += `<p class="copyright">
-Copyright &copy; 2022 by Rom & Nir. All rights reserved.
+Copyright &copy; ${year} by Rom & Nir. All rights reserved.
 </p>`;
 
 // end of footer
